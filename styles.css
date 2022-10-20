@@ -1,11 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
 .sidebar {
     background-color: #0091ff;
     grid-row: 1 / 4;
+    padding: 5px;
 }
 
 .header {
     background-color: green;
     grid-column: 2 / 4;
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+}
+
+.search-bar {
+    align-self: center;
+    justify-self: center;
+}
+
+.profile {
+    align-self: center;
+    justify-self: end;
+    padding: 20px;
+}
+
+.header-greeting {
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
 }
 
 .your-projects {
@@ -23,23 +55,30 @@
 
 .single-card {
     background: white;
+    padding: 5px;
 }
 
 .announcements {
     background-color: orange;
+    padding: 5px;
 }
 
 .announcements-item {
     background: white;
+    border: solid black;
+    padding: 5px;
 }
 
 .trending {
     background-color: pink;
     grid-column: 3 / 4;
+    padding: 5px;
 }
 
 .trending-item {
     background: white;
+    border: solid black;
+    padding: 5px;
 }
 
 .container {
