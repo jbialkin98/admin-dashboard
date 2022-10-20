@@ -1,10 +1,10 @@
 .sidebar {
-    background-color: green;
+    background-color: #0091ff;
     grid-row: 1 / 4;
 }
 
 .header {
-    background-color: blue;
+    background-color: green;
     grid-column: 2 / 4;
 }
 
@@ -12,15 +12,34 @@
     background-color: purple;
     grid-column: 2 / 3;
     grid-row: 2 / 4;
+    padding: 10px;
+}
+
+.your-projects > .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.single-card {
+    background: white;
 }
 
 .announcements {
     background-color: orange;
 }
 
+.announcements-item {
+    background: white;
+}
+
 .trending {
     background-color: pink;
     grid-column: 3 / 4;
+}
+
+.trending-item {
+    background: white;
 }
 
 .container {
