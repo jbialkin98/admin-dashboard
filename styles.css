@@ -80,7 +80,12 @@
 }
 
 .your-projects > .label {
-    padding-left: 15px;
+    padding-left: 20px;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
 .your-projects > .cards {
@@ -97,6 +102,12 @@
     padding-top: 10px;
     padding: 10px;
     min-height: 225px;
+    border-radius: 10px;
+}
+
+.single-card p:nth-child(2) {
+    font-size: .9em;
+    padding-top: 5px;
 }
 
 .single-card > .title {
@@ -114,20 +125,42 @@
     grid-auto-flow: row;
 }
 
+.announcements > .label {
+    padding-left: 5px;
+}
+
+.announcements-sidebar div:first-child, .trending-sidebar div:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.announcements-sidebar div:last-child, .trending-sidebar div:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .announcements-item {
     background: white;
     border: solid black;
-    padding: 5px;
+    padding: 5px 25px;
 }
 
 .announcements-label {
     font-weight: 500;
+    font-size: .85em;
+}
+
+.announcements-item p:nth-child(2) {
+    font-size: .75em;
 }
 
 .trending {
     background-color: var(--background-color);
     grid-column: 2 / 3;
+}
 
+.trending > .label {
+    padding-left: 5px;
 }
 
 .trending-sidebar {
@@ -137,10 +170,14 @@
 .trending-item {
     background: white;
     border: solid black;
-    padding: 5px;
+    padding: 5px 15px;
+}
+
+.trending-item > p {
+    font-size: .85em;
 }
 
 .trending-hashtag, .announcements-label {
-    margin-bottom: -15px;
+    margin-bottom: -.9em;
 }
 
