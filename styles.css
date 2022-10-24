@@ -8,6 +8,30 @@
     font-family: 'Roboto', sans-serif
 }
 
+img {
+    height: 1em;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 50px;
+    margin-left: -10px;
+    
+}
+
+#dashboard-image {
+    width: 45px;
+    height: auto;
+}
+
+#dashboard-top {
+    gap: 10px;
+    padding-left: 20px;
+
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -18,20 +42,20 @@
     grid-row: 1 / 4;
     padding: 5px;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .logo {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
-    padding-left: 20px;
 }
 
 .sidebar > ul {
     list-style: none;
     display: grid;
+    justify-content: left;
     grid-template-rows: repeat(9, 1fr);
-    gap: 5px;
+    gap: 15px;
 }
 
 .header {
