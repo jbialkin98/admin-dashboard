@@ -5,6 +5,7 @@
 :root {
     font-size: 16px;
     --background-color: rgb(228, 234, 241);
+    --gray-font-color: rgb(125, 125, 125);
     font-family: 'Roboto', sans-serif
 }
 
@@ -121,7 +122,8 @@ img {
 .bottom-left-side {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    padding-bottom: 10px;
 }
 
 #bottom-profile-icon {
@@ -144,14 +146,15 @@ img {
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
+    gap: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .header-buttons > button {
     background-color: #0091ff;
     color: white;
-    width: 75px;
+    width: 90px;
     height: 30px;
     text-align: center;
     border-radius: 40px;
@@ -251,6 +254,7 @@ img {
 
 .announcements-item p:nth-child(2) {
     font-size: .75em;
+    color: var(--gray-font-color);
 }
 
 .trending {
@@ -266,14 +270,26 @@ img {
     display: grid;
 }
 
-.trending-item {
+.trending-row {
     background: white;
-    border: solid black;
     padding: 5px 15px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    gap: 15px;
+}
+
+.trending-row > img {
+    width: 40px;
+    height: auto;
 }
 
 .trending-item > p {
     font-size: .85em;
+}
+
+.trending-item p:nth-child(2) {
+    color: var(--gray-font-color);
 }
 
 .trending-hashtag, .announcements-label {
