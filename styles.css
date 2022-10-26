@@ -100,6 +100,7 @@ img {
     border: none;
     background-color: rgb(227, 227, 227);
     height: 25px;
+    padding: 10px;
 }
 
 #bell-ring {
@@ -171,9 +172,7 @@ img {
     background-color: var(--background-color);
     grid-column: 1/2;
     grid-row: 1 / 3;
-
-    /* display: flex;
-    flex-direction: column; */
+    padding-bottom: 30px;
 }
 
 .your-projects > .label {
@@ -186,8 +185,6 @@ img {
 }
 
 .your-projects > .cards {
-    /* flex-grow: 1;
-    align-content: center; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -196,27 +193,43 @@ img {
 
 .single-card {
     background: white;
-    padding-top: 10px;
     padding: 10px;
     padding-left: 15px;
     min-height: 225px;
     border-radius: 10px;
     border-left: 10px solid rgb(255, 200, 18);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.single-card p:nth-child(2) {
+.card-content p:nth-child(2) {
     font-size: .9em;
     padding-top: 5px;
 }
 
-.single-card > .title {
+.card-content > .title {
     font-weight: bold;
     margin-bottom: -15px;
+}
+
+.card-icons {
+    display: flex;
+    gap: 15px;
+    align-self: flex-end;
+    padding: 15px;
+}
+
+.card-icons > img {
+    width: 20px;
+    height: auto;
+    
 }
 
 .announcements {
     background-color: var(--background-color);
     grid-column: 2/3;
+    padding-right: 30px;
 }
 
 .announcements-sidebar {
@@ -240,11 +253,20 @@ img {
 
 .announcements-item {
     background: white;
-    border: solid black;
     padding: 5px 25px;
     position: relative;
     display: flex;
     flex-direction: column;
+    min-width: 220px;
+}
+
+.bottom-border::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    width: 80%;
+    border-bottom: 1px solid var(--gray-font-color);
 }
 
 .announcements-label {
@@ -260,6 +282,8 @@ img {
 .trending {
     background-color: var(--background-color);
     grid-column: 2 / 3;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 .trending > .label {
@@ -268,13 +292,14 @@ img {
 
 .trending-sidebar {
     display: grid;
+    min-height: 50px;
 }
 
 .trending-row {
     background: white;
-    padding: 5px 15px;
+    padding: 0px 15px;
     display: flex;
-    padding-left: 30px;
+    padding-left: 20px;
     align-items: center;
     gap: 15px;
 }
