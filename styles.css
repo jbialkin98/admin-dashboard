@@ -63,7 +63,7 @@ img {
     grid-column: 2 / 4;
     display: grid;
     grid-template-rows: repeat(2, 75px);
-    
+    position: relative;
 }
 
 .header-first-row {
@@ -201,6 +201,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2)
 }
 
 .card-content p:nth-child(2) {
@@ -235,6 +236,9 @@ img {
 .announcements-sidebar {
     display: grid;
     grid-auto-flow: row;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
 .announcements > .label {
@@ -293,6 +297,8 @@ img {
 .trending-sidebar {
     display: grid;
     min-height: 50px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2)
 }
 
 .trending-row {
